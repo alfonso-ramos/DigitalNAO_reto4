@@ -9,7 +9,6 @@ response = requests.get(url)
 soup = BeautifulSoup(response.text, 'html.parser')
 
 # Extraer los datos deseados
-# Supongamos que queremos obtener todos los enlaces de la página
 enlaces = soup.find_all('a')
 
 # Imprimir los enlaces encontrados
